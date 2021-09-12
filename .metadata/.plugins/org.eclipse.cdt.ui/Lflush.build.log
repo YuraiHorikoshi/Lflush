@@ -1,0 +1,20 @@
+14:20:11 **** Incremental Build of configuration Debug for project Lflush ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303x8 -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Lflush.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\yuduki\STM32CubeIDE\workspace_1.3.0\Lflush\STM32F303K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lflush.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Lflush.elf
+ 
+arm-none-eabi-objdump -h -S  Lflush.elf  > "Lflush.list"
+arm-none-eabi-objcopy  -O binary  Lflush.elf  "Lflush.bin"
+arm-none-eabi-size   Lflush.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13648	     20	   1780	  15448	   3c58	Lflush.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lflush.bin
+ 
+Finished building: Lflush.list
+ 
+
+14:20:13 Build Finished. 0 errors, 0 warnings. (took 1s.833ms)
+

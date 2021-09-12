@@ -1,0 +1,10 @@
+17:34:17 **** Incremental Build of configuration Debug for project kounaijiai_2019 ****
+make -j8 all 
+arm-none-eabi-size   kounaijiai_2019.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13384	     20	   1700	  15104	   3b00	kounaijiai_2019.elf
+Finished building: default.size.stdout
+ 
+
+17:34:17 Build Finished. 0 errors, 0 warnings. (took 449ms)
+

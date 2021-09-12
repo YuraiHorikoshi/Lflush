@@ -1,0 +1,7 @@
+15:31:50 **** Incremental Build of configuration Debug for project KRP_CentralMicon ****
+Info: Internal Builder is used for build
+arm-none-eabi-objcopy.exe -O ihex KRP_CentralMicon.elf KRP_CentralMicon.hex 
+Info: Parallel threads used: 0
+
+15:31:56 Build Finished. 0 errors, 0 warnings. (took 5s.458ms)
+
